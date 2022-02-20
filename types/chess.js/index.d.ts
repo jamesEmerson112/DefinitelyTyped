@@ -484,6 +484,12 @@ export interface ChessInstance {
      * @returns "b" if Black is the side to move, otherwise "w" for White.
      */
     turn(): "b" | "w";
+    
+    /**
+     * For multiplaying function, will be continued
+     */
+    setTurn(arg0: string): void;
+    getTurn(): string;
 
     /**
      * Attempts to make a move on the board, returning a move object if the
